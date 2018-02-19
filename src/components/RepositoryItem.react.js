@@ -9,7 +9,6 @@ class RepositoryItem extends React.Component {
     componentDidMount() {
         api.fetchRepository(this.props.repositoryName)
         .then(repository => {
-            console.log(repository)
             this.setState({
                 repository: repository
             })
