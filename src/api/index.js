@@ -1,6 +1,6 @@
 function fetchGithubAPIWithPath(path) {
     let headers = new Headers({
-        "Authorization": `token 459c91f89836089f61d215dbdedf12653dc5f361`
+        "Authorization": `token dfccae474f5ceb1df017a3b861e7fad0afc19fc4 `
     })
     return fetch(`https://api.github.com${path}`, {headers}).then( res => res.json() )
 }
